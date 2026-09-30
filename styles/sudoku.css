@@ -87,7 +87,8 @@ body {
    }
 
    #board td {
-      padding: 1rem;
+      width: 3rem;
+      height: 3rem;
       border-right: var(--board-line) solid .1em;
       text-align: center;
 
@@ -125,15 +126,29 @@ body {
 
    .palette {
       border-collapse: collapse;
-      border: var(--block-line) solid .2rem;
+      
    }
 
    .palette td{
-      padding: 1rem;
-      border-right: var(--board-line) solid .1em;
+      width: 2.5rem;
+      height: 2.5rem;
+      border: var(--block-line) solid .1rem;
+      
       text-align: center;
-
       font-size: 1rem;
+   }
+
+   .palette td:hover{
+      background-color: var(--color-hover);
+   }
+
+   .palette td.active{
+      background-color: var(--color-user-input);
+   }
+
+   .palette td img{
+      width: 1rem;
+      height: auto;
    }
 
 /* ---- high-scores table  (requirement 8) ---------------------------- */
