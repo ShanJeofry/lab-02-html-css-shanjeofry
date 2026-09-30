@@ -81,6 +81,10 @@ body {
       gap: .2em
    }
 
+   h1{
+      width: 95vw;
+   }
+
    #board {
       border-collapse: collapse;
       border: var(--block-line) solid .2em;
