@@ -38,6 +38,44 @@ body {
    (td:nth-child(3n) and tr:nth-child(3n) td); a :hover colour.
    Also add .user-input and .error rules now - Lab 06 switches them on. */
 
+   #board {
+      border-collapse: collapse;
+      border: var(--block-line) solid .2em
+   }
+
+   #board td {
+      padding: 1rem;
+      border-right: var(--board-line) solid .1em;
+      text-align: center;
+
+      font-size: 1rem;
+      color: var(--digit);
+   }
+
+   #board td:nth-child(3n){
+      border-right: var(--block-line) solid .2em;
+   }
+
+   #board tr {
+      border-bottom: var(--board-line) solid .1em;
+   }
+
+   #board tr:nth-child(3n){
+      border-bottom: var(--block-line) solid .2em;
+   }
+
+   #board td:hover{
+      background-color: var(--color-hover);
+   }
+
+   #board td.user-input{
+      color: var(--color-user-input);
+   }
+
+   #board td.error{
+      color: var(--color-error);
+   }
+
 
 /* ---- the numbers palette  (requirement 6) -------------------------- */
 /* TODO: size + border the .palette cells; a :hover colour; and a
