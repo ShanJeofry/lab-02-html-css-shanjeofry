@@ -30,6 +30,40 @@ body {
 /* TODO: a Flexbox row on .site-header; push the nav right with
    margin-left:auto; add flex-wrap so the nav drops below the brand on a
    narrow screen (that's the whole responsive story - no media query). */
+   .site-header{
+      display: flex;
+      flex-wrap: wrap;
+      background-color: var(--header-bg);
+
+      padding: 1rem;
+
+      justify-content: center;
+      align-items: center;
+   }
+
+   .brand{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+
+      color: #f2f2f2; 
+      font-weight: bold;
+      font-size: 2em;
+   }
+
+   .brand img{
+      width: 2.2em;
+      margin-right: .5rem;
+   }
+
+   .site-header nav{
+      margin-left: auto;
+   }
+
+   .site-header nav a{
+      color: #f2f2f2;
+   }
 
 
 /* ---- the board  (requirement 5) ------------------------------------ */
