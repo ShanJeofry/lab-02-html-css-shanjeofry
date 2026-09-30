@@ -40,7 +40,7 @@ body {
 
    #board {
       border-collapse: collapse;
-      border: var(--block-line) solid .2em
+      border: var(--block-line) solid .2em;
    }
 
    #board td {
@@ -49,7 +49,6 @@ body {
       text-align: center;
 
       font-size: 1rem;
-      color: var(--digit);
    }
 
    #board td:nth-child(3n){
@@ -81,6 +80,18 @@ body {
 /* TODO: size + border the .palette cells; a :hover colour; and a
    .active style for the selected digit (used in Lab 06). */
 
+   .palette {
+      border-collapse: collapse;
+      border: var(--block-line) solid .2rem;
+   }
+
+   .palette td{
+      padding: 1rem;
+      border-right: var(--board-line) solid .1em;
+      text-align: center;
+
+      font-size: 1rem;
+   }
 
 /* ---- high-scores table  (requirement 8) ---------------------------- */
 /* TODO: comfortable padding; left-aligned headings; an underline under
