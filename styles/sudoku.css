@@ -130,3 +130,26 @@ body {
 /* ---- high-scores table  (requirement 8) ---------------------------- */
 /* TODO: comfortable padding; left-aligned headings; an underline under
    the header row of .scores. */
+
+   #high-score-table{
+      border-collapse: collapse;
+      
+   }
+
+   #high-score-table th{
+      font-size: 1rem;
+      text-align: left;
+      padding: 1rem;
+
+   }
+   
+   #high-score-table td{
+      font-size: 1rem;
+      text-align: left;
+      padding: 1rem;
+   }
+
+   #high-score-table thead{
+      border-bottom: black solid .2rem; 
+   }
+   
